@@ -18,6 +18,19 @@ Create a new file named `mods.php` in the **same directory** as `func.php` & put
 } ?>
 ```
 
+### Alternative route if you're not familiar with code
+You can create a `mods.php` file & `mods` folder so your mods file will essentially look like this with each mod you have:
+
+```
+<?php {
+
+	include('mods/mod-name.php');
+
+} ?>
+```
+
+This will help you troubleshoot, too, as you can just rename each file to have a `1` after if you need to deduce which code is causing your problems. That said, this isn't flawless & you still need to upload the mod files to the `mods` directory if you go this route.
+
 ## Troubleshooting
 * If you have **ETCG 1.0.1**, your mods will use ***mysql***.
 * If you have **ETCG 1.1.0**, your mods will use ***mysqli***.
